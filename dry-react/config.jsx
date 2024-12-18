@@ -1,5 +1,5 @@
 const config = {
-    apiBaseUrl: 'https://localhost:7064'
+    apiBaseUrl: 'https://frontend-5-stot.onrender.com/'
 };
 
 export default config;
