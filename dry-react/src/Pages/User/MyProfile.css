@@ -1,0 +1,190 @@
+.sell-card {
+    border: none; /* Remove the existing border */
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1); /* Combine both box-shadow properties */
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 50px auto 20px; /* Center the card horizontally and add space above */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside the card */
+    position: relative; /* Add relative positioning */
+    justify-content: center;
+    margin-left: -20px;
+}
+
+
+.sell-gear-image {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 10px; /* Ensure the image has rounded corners */
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+.sell-card p {
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the text takes the full width of the card */
+    margin: 5px 0;
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure text wraps within the card */
+}
+
+.delete-button {
+    background: red;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+
+.my-profile {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 150px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin-top: 50px;
+}
+
+.gear-list {
+    width: 100%; /* Ensure the gear list takes the full width of the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.profile-info, .edit-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes the full width of its container */
+    max-width: 400px; /* Set the maximum width */
+}
+
+.ninja {
+    display: block;
+    width: 10em; /* Increase the width */
+    height: 10em; /* Increase the height */
+    margin: 20px auto; /* Center the SVG and add space above */
+    margin-bottom: 50px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.nice-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px; /* Adjust the height as needed */
+    resize: none; /* Prevent resizing */
+}
+
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .sell-card {
+        width: 95% !important; /* Ensure consistent width for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+       margin-left: -3px;
+    }
+
+    .my-profile {
+        width: 100%; /* Reduce width for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+}
+
+.deleteprofile-button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.deleteprofile-button:hover{
+    background: darkred;
+}
+
+.myproductsButton{
+    margin-bottom: 20px;
+}
+
+.remove-favorite-button{
+    margin-top: 10px;
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1); /* Combine both box-shadow properties */
+    width:180px;
+}
+
+.saveButton{
+    margin-top: 10px;
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1); /* Combine both box-shadow properties */
+    margin-bottom: 2px;
+}
+
+.cancelButton{
+    margin-top: 10px;
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1); /* Combine both box-shadow properties */
+    margin-bottom: 2px;
+}
+
+.profile-image {
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-bottom: 20px;
+    margin-top: -100px;
+}
+
+@media (max-width: 600px) {
+    .profile-image {
+        width: 150px; /* Adjust the size for smaller screens */
+        height: 150px; /* Adjust the size for smaller screens */
+        margin-top: -5px;
+    }
+}
+
+.default-profile-image {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    background-color: white; /* White background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black; /* Text color */
+    font-size: 16px; /* Adjust the font size as needed */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-bottom: 20px;
+}

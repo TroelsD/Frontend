@@ -1,0 +1,180 @@
+/* GearCard.css */
+
+/* Base styles for GearCard */
+.gear-card {
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 300px; /* Set a fixed width for the card */
+    height: 400px; /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto; /* Center the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.gear-card:hover {
+    transform: scale(1.01); /* Increase size on hover */
+}
+
+.gear-card h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.gear-card h5 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.gear-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    outline: none;
+}
+
+.comments-section {
+    width: 90%; /* Make the comments section smaller than the card */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.show-comments-button {
+    width: 100%; /* Make the button take full width of the comments section */
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Media query for screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .gear-card {
+        padding: 10px;
+        margin: 32px auto; /* Center the card */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .gear-card h4 {
+        font-size: 1.2em;
+    }
+
+    .gear-card h5 {
+        font-size: 1em;
+    }
+
+    .gear-image {
+        width: 70%; /* Adjust the image size for smaller screens */
+    }
+
+    .nav-button {
+        display: none; /* Hide navigation buttons on mobile */
+    }
+
+    .favorite-button {
+        position: relative;
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-seller-button {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media query for screens smaller than 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .gear-card {
+        padding: 5px;
+        margin: 32px auto; /* Center the card */
+        width: 248px;
+        height: auto;
+    }
+
+    .gear-image {
+        width: 60%; /* Adjust the image size for smaller screens */
+    }
+
+    .gear-card h4 {
+        font-size: 1em;
+    }
+
+    .gear-card h5 {
+        font-size: 0.9em;
+    }
+
+    .favorite-button {
+        margin-bottom: 5px;
+        margin-top: 4px;
+        padding: 8px;
+    }
+
+    .contact-seller-button {
+        margin-top: 5px;
+        padding: 8px;
+    }
+}

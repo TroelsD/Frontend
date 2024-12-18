@@ -1,0 +1,370 @@
+.rehearsal-room-card {
+    border: none;
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.rehearsal-room-card:hover{
+    transform: scale(1.01);
+    opacity: 1;
+
+}
+
+.favorite-button {
+    position: absolute;
+    top: 10px; /* Adjust position to be inside the card */
+    right: 10px; /* Adjust position to be inside the card */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+    outline: none;
+    width: auto;
+    padding: 5px;
+    margin-top: -100px; /* Adjust position to be inside the card */
+}
+
+.favorite-button:hover {
+    background: none;
+    color: darkred;
+}
+
+@media (max-width: 600px) {
+    .favorite-button {
+        top: 10px; /* Adjust position for smaller screens */
+        right: 10px; /* Adjust position for smaller screens */
+        font-size: 30px;
+    }
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.nav-button:hover {
+    opacity: 1;
+    background-color: #ffffff;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    .nav-button {
+        font-size: 12px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-button.left {
+        left: 5px;
+    }
+
+    .nav-button.right {
+        right: 5px;
+    }
+}
+
+.rehearsal-room-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+.toggle-images-button2 {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background-color: #bccac9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more-info-container {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 600px) {
+    .rehearsal-room-card {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .rehearsal-room-image {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .toggle-images-button, .show-comments-button, .sell-button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+.toggle-images-button:hover {
+    background-color: cyan;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.show-comments-button {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.show-comments-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #2b2d30;
+    color: #ffffff;
+    resize: none;
+}
+
+.clear-filters-button:hover {
+    background-color: #4cacaf;
+}
+
+.search-bar2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-bar2 input {
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.sell-button:hover {
+    background-color: #712cf9;
+}
+
+@media (max-width: 600px) {
+    .search-bar2 input {
+        width: 70%;
+    }
+}
+
+.comment {
+    background-color: #26282e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comments-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.search-button-small {
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 55px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #6366f1;
+    cursor: pointer;
+    text-align: center;
+    height: 38px;
+    margin-top: 10px;
+}
+
+.search-button-small:hover {
+    background-color: #712cf9;
+}
+
+.sell-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sell-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #6366f1;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.selector-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.selector-container .selector select {
+    padding: 15px;
+    font-size: 12px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .selector-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .selector-container .selector {
+        width: 100%;
+    }
+
+    .selector-container .selector select {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .selector-container .selector select option {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sell-button {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+
+.view-details-button:hover {
+    background-color: transparent;
+}
+
+.view-details-button {
+    width: 130px;
+    margin-top: 10px;
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button {
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-align {
+    text-align: left;
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.rehearsal-room-card-link {
+    text-decoration: none;
+    color: inherit;
+}

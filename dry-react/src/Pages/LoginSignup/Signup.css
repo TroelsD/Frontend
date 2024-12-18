@@ -1,0 +1,97 @@
+/* src/Pages/LoginSignup/Signup.css */
+
+
+
+.signup-body2 {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+   max-width: 400px;
+    margin: 10px auto;
+}
+
+.signup-button {
+    padding: 12px;
+    background-color: #712cf9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+.signup-success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.signup-error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.auth-error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .signup-input {
+        font-size: 14px;
+    }
+
+    .signup-button {
+        font-size: 14px;
+    }
+}

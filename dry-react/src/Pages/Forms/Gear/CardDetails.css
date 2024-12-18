@@ -1,0 +1,80 @@
+/* CardDetails.css */
+
+.gear-carddetails {
+    border: none; /* Remove the existing border */
+    box-shadow: 0 0 0 1px #3a3a3a, 0 4px 8px rgba(0, 0, 0, 0.1); /* Combine both box-shadow properties */
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 20px auto; /* Center the card horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside the card */
+    margin-top: 50px; /* Add space above the card */
+    position: relative; /* Add relative positioning */
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    outline: none;
+    margin-top: 10px; /* Add space above the button */
+    display: block;
+    text-align: center; /* Center the button */
+}
+
+.comments-section {
+    width: 90%; /* Make the comments section smaller than the card */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.show-comments-button {
+    width: 100%; /* Make the button take full width of the comments section */
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .gear-carddetails {
+        width: 80%; /* Make the card smaller */
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin: 20px auto; /* Center the card horizontally */
+    }
+
+    .comments-section {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 10px;
+        margin: 20px auto; /* Center the comments section */
+    }
+}
+
+@media (max-width: 480px) {
+    .gear-carddetails {
+        width: 90%; /* Make the card smaller */
+        padding: 16px; /* Adjust padding for smaller screens */
+        margin: 10px auto; /* Center the card horizontally */
+    }
+
+    .comments-section {
+        width: 100%; /* Adjust width for smaller screens */
+        padding: 5px;
+        margin: 20px auto; /* Center the comments section */
+
+    }
+}
