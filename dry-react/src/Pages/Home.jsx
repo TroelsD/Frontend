@@ -6,13 +6,13 @@ import heroImage from '../assets/Hero_itt2.png';
 import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import RehearsalRoomCard from "./Forms/RehearsalRoom/RehearsalRoomCard.jsx";
+
 
 function Home() {
     const [musicGear, setMusicGear] = useState([]);
-    const [rehearsalRooms, setRehearsalRooms] = useState([]);
+
     const [loadingMusicGear, setLoadingMusicGear] = useState(true);
-    const [loadingRehearsalRooms, setLoadingRehearsalRooms] = useState(true);
+
 
     useEffect(() => {
         const fetchAllMusicGear = async () => {
@@ -104,18 +104,7 @@ function Home() {
                     ))
                 )}
             </div>
-            <h2>Find dit nye øvelokale eller studie</h2>
-            <div className="carousel-container">
-                {loadingRehearsalRooms ? (
-                    Array(5).fill().map((_, index) => (
-                        <Skeleton key={index} height={200} width={300} style={{margin: '10px'}}/>
-                    ))
-                ) : (
-                    rehearsalRooms.map((item) => (
-                        <RehearsalRoomCard key={item.id} item={item}/>
-                    ))
-                )}
-            </div>
+
         </div>
     );
 }
